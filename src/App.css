@@ -1,38 +1,149 @@
-.App {
-  text-align: center;
+.navbar
+{
+    box-sizing: border-box;
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 8vh;
+    transition: border .100s ease-out .50s;
+    -moz-transition: border .100s ease-out .50s;
+    -webkit-transition: border .100s ease-out .50s;
+    transition: background-color .40s ease .25s;
+    -moz-transition: background-color .40s ease .25s;
+    -webkit-transition: background-color .40s ease .25s; 
+
+}
+.navbar:hover
+{
+    border: 2px solid #17a2b8;
+    background-color: #0c111b !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.search-bar {
+    color: #17a2b8 !important;
+    outline: 0;
+    border: 0;
+    border-bottom: 1px solid rgba(255, 255, 255,0.6);
+    border-bottom-right-radius: 10px;
+    transition: padding-right .40s ease;
+    -moz-transition: padding-right .40s ease;
+    -webkit-transition: padding-right .40s ease;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.search-bar:hover {
+    padding-right: 200px;
+    background-color: #0c111b !important;
+}
+
+.hero-container {
+    position: relative;
+    z-index: 100;
+    margin-top: 8vh;
+}
+
+.hero-text {
+    position: relative;
+    z-index: 200;
+}
+
+.hero-backdrop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.4;
+}
+
+
+
+.trending-container {
+    background-color: #0c111b;
+    padding-top: 40px;
+}
+
+.trend-head {
+    color: cornsilk;
+    padding-top: 10px;
+    padding-left: 60px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    letter-spacing: 2px;
+}
+
+.trend-sec {
+    display: flex;
+    flex-direction: row;
+    overflow-y: auto;
+    align-items: flex-end;
+    border: 5px solid #2E3333;
+    border-radius: 10px;
+}
+.card{
+    background-color: #192133;
+}
+
+.cards {
+    margin:0 60px;
+    justify-self: space-between;
+}
+
+h5 {
+    color: rgb(4, 126, 126);
+}
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #2E3333 rgba(46, 45, 44, 0.274);
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  /* Works on Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 12px;
   }
-  to {
-    transform: rotate(360deg);
+  
+  *::-webkit-scrollbar-track {
+    background: rgba(46, 45, 44, 0.274);
   }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: #2E3333;
+    border-radius: 20px;
+    border: 3px solid rgba(46, 45, 44, 0.274);
+  }
+
+.card-body {
+    background-color: #192133;
+}
+
+.error-page {
+    margin-top: 8vh;
+}
+
+.about-sec {
+    height: 92vh;
+}
+
+.icon {
+    background-color: transparent;
+    height: 30px;
+    width: 30px;
+    margin-right: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(4, 126, 126);
+}
+
+.genre {
+    border-radius: 10px;
+}
+
+.end-label {
+    margin-top: 150px;
 }
