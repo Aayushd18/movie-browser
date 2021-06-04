@@ -36,7 +36,7 @@ function App() {
         <Route path="aayushd18.github.io/search">
           <SearchView keyword={searchText} searchResults={searchResults} />
         </Route>
-        <Route path="aayushd18.github.io/Movie-browser/movies/:id" component={MovieView} />
+        <Route path="aayushd18.github.io/movies/:id" component={MovieView} />
         <Route component={NotFound} />
       </Switch>
     </div>
