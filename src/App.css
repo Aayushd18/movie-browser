@@ -147,3 +147,9 @@ a {
 .end-label {
     margin-top: 150px;
 }
+
+.movie-back {
+    height: 100vh;
+    overflow-x: scroll;
+}
+

@@ -32,13 +32,13 @@ const MovieView = () => {
             return (
                 <>
                     <Hero text={movieDetails.original_title} backdrop={backdropUrl} />
-                    <div className="trending-container about-sec">
+                    <div className="trending-container about-sec movie-back">
                         <div className="container my-5">
                             <div className="row">
-                                <div className="col-md-3">
+                                <div className="col-md-3 col-4">
                                     <img  src={posterPath} alt="..." className="img-fluid shadow rounded" />
                                 </div>
-                                <div className="col-md-9 text-white">
+                                <div className="col-md-9 col-8 text-white">
                                     <h2>{movieDetails.original_title}</h2>
                                     <p className="lead text-white">
                                         {movieDetails.overview}
