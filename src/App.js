@@ -29,14 +29,14 @@ function App() {
     <div>
       <Navbar searchText={searchText} setSearchText={setSearchText} />
       <Switch>
-        <Route path="/" exact>
+        <Route path="/aayushd18.github.io/" exact>
           <Home />
         </Route>
-        <Route path="/about" component={AboutView} />
+        <Route path="aayushd18.github.io/about" component={AboutView} />
         <Route path="/search">
           <SearchView keyword={searchText} searchResults={searchResults} />
         </Route>
-        <Route path="/movies/:id" component={MovieView} />
+        <Route path="aayushd18.github.io/movies/:id" component={MovieView} />
         <Route component={NotFound} />
       </Switch>
     </div>
