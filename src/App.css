@@ -1,4 +1,4 @@
-.navbar
+ .navbar
 {
     box-sizing: border-box;
     z-index: 9999;
@@ -102,7 +102,7 @@ h5 {
   }
   
   /* Works on Chrome, Edge, and Safari */
-  *::-webkit-scrollbar {
+   *::-webkit-scrollbar {
     width: 12px;
   }
   
@@ -151,5 +151,5 @@ a {
 .movie-back {
     height: 100vh;
     overflow-x: scroll;
-}
+} 
 
