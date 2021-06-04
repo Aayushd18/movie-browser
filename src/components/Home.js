@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 const MovieCard = ({ movie }) => {
 
   let posterUrl = `https://image.tmdb.org/t/p/w500${movie.poster_path}`
-  const detailUrl = `/movies/${movie.id}`
+  const detailUrl = `/aayushd18.github.io/movie-browser/movies/${movie.id}`
   if (movie.poster_path === null) {
     posterUrl = process.env.PUBLIC_URL + '/commingsoon.webp'
   }
@@ -26,7 +26,7 @@ const MovieCard = ({ movie }) => {
 const DiscoverCard = ({ movie }) => {
 
   let posterUrl = `https://image.tmdb.org/t/p/w500${movie.poster_path}`
-  const detailUrl = `/movies/${movie.id}`
+  const detailUrl = `/aayushd18.github.io/movie-browser/movies/${movie.id}`
   if (movie.poster_path === null) {
     posterUrl = process.env.PUBLIC_URL + '/commingsoon.webp'
   }
