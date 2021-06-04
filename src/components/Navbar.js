@@ -4,14 +4,14 @@ const Navbar = ({ searchText, setSearchText }) => {
   
   const history = useHistory()
   const updateSearchText = (e) => {
-    history.push('/aayushd18.github.io/movie-browser/search')
+    history.push('/movie-browser/search')
     setSearchText(e.target.value)
   }
 
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container-fluid">
-        <Link className="navbar-brand" to="/aayushd18.github.io/movie-browser/">
+        <Link className="navbar-brand" to="/movie-browser/">
           Movie Browser
         </Link>
         <button
@@ -28,12 +28,12 @@ const Navbar = ({ searchText, setSearchText }) => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <Link className="nav-link active" aria-current="page" to="/aayushd18.github.io/movie-browser/">
+              <Link className="nav-link active" aria-current="page" to="/movie-browser/">
                 Home
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/aayushd18.github.io/movie-browser/about">
+              <Link className="nav-link" to="/movie-browser/about">
                 About
               </Link>
             </li>
@@ -57,7 +57,7 @@ const Navbar = ({ searchText, setSearchText }) => {
               value={searchText}
               onChange={updateSearchText}
             />
-              <Link to="/aayushd18.github.io/movie-browser/search" className="btn btn-outline-info" >
+              <Link to="/movie-browser/search" className="btn btn-outline-info" >
               Search
             </Link>
           </form>
