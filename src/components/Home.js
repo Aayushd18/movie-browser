@@ -71,7 +71,7 @@ const Home = () => {
       .then(data => {
         setTrendResults(data.results)
       })
-  }, [trendResults])
+  }, [])
 
   useEffect(() =>{
     fetch(`https://api.themoviedb.org/3/discover/movie?api_key=9810fdab8a6872c19c905c5c33b3e351&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=2&with_watch_monetization_types=flatrate`)
@@ -79,7 +79,7 @@ const Home = () => {
       .then(data => {
         setDiscoverResults(data.results)
       })
-  }, [discoverResults])
+  }, [])
 
 
 
@@ -91,7 +91,7 @@ const Home = () => {
       .then(data => {
         setGenreResults(data.genres)
       })
-  }, [genreResults])
+  }, [])
 
   
   
